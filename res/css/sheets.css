@@ -1,0 +1,147 @@
+.ok{
+    color: #3abd62;
+}
+.warning{
+    color: darkorange;
+}
+.info{
+    color: dodgerblue;
+}
+.fail{
+    color: #ff5346;
+}
+.pointer{
+    cursor: pointer;
+}
+.popupwp{
+    position: fixed;
+    width: 300px;
+    min-height: 120px;
+    max-height: 500px;
+    background-color: rgba(256,256,256,0.5);
+    border-radius: 6px;
+    left: calc(50% - 150px);
+    top: 150px;
+    box-shadow: 0px 10px 34px 0px #222222;
+    border-bottom: 3px solid #22ad4b;
+    background-image: url(../img/dot_pattern.png);
+    z-index: 999;
+}
+.big{
+    width: 450px!important;
+    left: calc(50% - 225px);
+    top: 115px;
+
+}
+.bigger{
+    width: 650px!important;
+    left: calc(50% - 320px);
+    top: 95px;
+}
+.biggest{
+    width: 900px!important;
+    left: calc(50% - 450px);
+    top: 75px;
+}
+.popupwp .head{
+    float: left;
+    width: 96%;
+    margin: 1%;
+    padding: 0 1%;
+    background-color: rgba(255,255,255,0.5);
+    min-height: 32px;
+    border-radius: 4px;
+}
+.popupwp .head .title{
+    width: 90%;
+    float: left;
+    color: #5b8a74;
+    padding: 5px;
+}
+.popupwp .head .title::first-letter {
+    color: #3cc663;
+    text-transform: capitalize;
+}
+.popupwp .head .close{
+    float: right;
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    background-color: red;
+    opacity: 0.6;
+    margin-top: 7px;
+    margin-right: 2px;
+}
+.popupwp .content{
+    float: left;
+    width: 96%;
+    padding: 2%;
+    min-height: 40px;
+    color: #517767;
+}
+.popupwp .footer{
+    float: left;
+    width: 96%;
+    height: 40px;
+    padding: 2%;
+    text-align: right;
+}
+.popupwp .footer button{
+    padding: 10px;
+    background-color: #0F9E5E;
+    color: #e1e1e1;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    min-width: 60px;
+}
+.popupwp .footer button:hover, .popupwp .footer button:focus{
+    background-color: #3cc663;
+    box-shadow: 0px 1px 8px 0px #3cc663;
+}
+.wrapper .projectList::-webkit-scrollbar, body::-webkit-scrollbar, .monitor::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.wrapper .projectList::-webkit-scrollbar-track, body::-webkit-scrollbar-track, .monitor::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(28, 110, 79, 0.6);
+    border-radius: 5px;
+}
+
+.wrapper .projectList::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb, .monitor::-webkit-scrollbar-thumb{
+    background-color: #34a884;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+input[type="radio"] {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(0deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%),
+    -webkit-linear-gradient(90deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin-right: 15px;
+    position: relative;
+    width: 15px;
+    -webkit-appearance: none;
+    outline: none;
+}
+input[type="radio"]:after {
+    background-color: #444;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+    0 1px 1px hsla(0,0%,100%,.8);
+    content: '';
+    display: block;
+    height: 7px;
+    left: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+input[type="radio"]:checked:after {
+    background-color: #0ac153;
+}
