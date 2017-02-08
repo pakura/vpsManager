@@ -10,10 +10,10 @@ class sshModel{
 
     private $con;
     private $ssh = array(
-        'ssh_host' => '138.197.73.246',
+        'ssh_host' => '',
         'ssh_port' => '22',
-        'ssh_user' => 'root',
-        'ssh_pass' => 'Mobility123!))',
+        'ssh_user' => '',
+        'ssh_pass' => '',
     );
 
     public function __construct(){
